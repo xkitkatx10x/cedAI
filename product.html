@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generatore Descrizioni Prodotto AI</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fbfcfe;
+      color: #525356;
+    }
+
+    header {
+      background-color: #ff6d5a;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(99, 77, 255, 0.06);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      color: #525356;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #71747A;
+    }
+
+    .cta-btn {
+      background-color: #ff6d5a;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .cta-btn:hover {
+      background-color: #ff4f3d;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1px solid #dbdfe7;
+      border-radius: 6px;
+    }
+
+    .form-input:focus {
+      border-color: #5a4cc2;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #fefaf6;
+    }
+
+    .footer p {
+      color: #7e8186;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Genera Descrizioni Prodotto con AI</h1>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Compila il modulo per generare la descrizione del tuo prodotto</h2>
+    <form id="product-form">
+      <label for="product-name">Nome Prodotto:</label>
+      <input type="text" id="product-name" class="form-input" placeholder="Inserisci nome prodotto" required>
+
+      <label for="short-description">Descrizione Breve:</label>
+      <input type="text" id="short-description" class="form-input" placeholder="Inserisci descrizione breve" required>
+
+      <label for="paragraphs-number">Numero Paragrafi:</label>
+      <input type="number" id="paragraphs-number" class="form-input" placeholder="Numero paragrafi" required>
+
+      <label for="buyer-persona">Buyer Persona:</label>
+      <select id="buyer-persona" class="form-input" required>
+        <option value="genitori">Genitori</option>
+        <option value="teenager">Teenager</option>
+        <option value="clienti-business">Clienti Business</option>
+        <option value="sportivi">Sportivi</option>
+        <option value="over-60">Over 60</option>
+        <option value="ecoconsapevoli">Ecoconsapevoli</option>
+      </select>
+
+      <label for="tone">Tono di Voce:</label>
+      <select id="tone" class="form-input" required>
+        <option value="formale">Formale</option>
+        <option value="creativo">Creativo</option>
+      </select>
+
+      <label for="seo-level">SEO Level:</label>
+      <select id="seo-level" class="form-input" required>
+        <option value="base">Base</option>
+        <option value="avanzato">Avanzato</option>
+        <option value="very-strong">Very Strong</option>
+      </select>
+
+      <button type="submit" class="cta-btn">Genera Descrizione</button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2025 Generatore di Descrizioni Prodotto</p>
+</footer>
+
+</body>
+</html>
